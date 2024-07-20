@@ -1,0 +1,68 @@
+===Database bulidingdb
+
+== Table structure for table tb_building
+
+|------
+|Field|Type|Null|Default
+|------
+|id|int(10)|No|
+|ename|varchar(50)|No|
+|adds|varchar(100)|No|
+|city|varchar(50)|No|
+|phone|varchar(10)|No|
+|phone1|varchar(10)|No|
+|email|varchar(50)|No|
+|cat|varchar(50)|No|
+|area|varchar(50)|No|
+|size|varchar(25)|No|
+|status|varchar(50)|No|
+|uname|varchar(50)|No|
+|request|varchar(50)|No|
+== Dumping data for table tb_building
+
+|3|Tamilselvan|asd|Chennai|9677855384|9443327179|tmlgt20@gmail.com|Villa|Andalpuram|5000 sqft|Canceled|GTamil|Cancel The Booking
+== Table structure for table tb_reg
+
+|------
+|Field|Type|Null|Default
+|------
+|ename|varchar(50)|No|
+|adds|varchar(50)|No|
+|city|varchar(50)|No|
+|phone|varchar(10)|No|
+|uname|varchar(50)|No|
+|pass|varchar(50)|No|
+|utype|varchar(75)|No|
+== Dumping data for table tb_reg
+
+|G.Tamil Selvan|tamilravi017@gmail.com|Chennai|9677855384|GTamil|tamilg|Buliders
+|G.Tamil Selvan|tamilravi017@gmail.com|Trichy|9677855384|GTamils|123|Transport
+|Tamilselvan|tamilselvan@gmail.com|Trichy|9677855384|Tamil|123|Transport
+== Table structure for table tb_trans
+
+|------
+|Field|Type|Null|Default
+|------
+|id|int(11)|No|
+|ename|varchar(50)|No|
+|adds|varchar(100)|No|
+|city|varchar(50)|No|
+|phone|varchar(10)|No|
+|phone1|varchar(10)|No|
+|email|varchar(100)|No|
+|fcity|varchar(50)|No|
+|tcity|varchar(50)|No|
+|pick|varchar(50)|No|
+|deli|varchar(50)|No|
+|cata|varchar(100)|No|
+|tru|varchar(100)|No|
+|moq|varchar(50)|No|
+|nos|varchar(50)|No|
+|lw|varchar(50)|No|
+|low|varchar(50)|No|
+|status|varchar(50)|No|
+|uname|varchar(50)|No|
+|request|varchar(50)|No|
+== Dumping data for table tb_trans
+
+|1|Tamilselvan|Trichy|trichy |9677855384|9443327179|tmlgt20@gmail.com|Thanjavur|Pudukkottai|2022-05-21|2022-05-29|Containers|Flatbed (9-Axle)|2|2|In Kgs|2|Canceled|GTamils|Cancel The Booking
