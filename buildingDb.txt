@@ -1,0 +1,114 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Feb 09, 2022 at 12:27 AM
+-- Server version: 5.0.45
+-- PHP Version: 5.2.5
+-- 
+-- fff
+-- 
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `bulidingdb`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_building`
+-- 
+
+CREATE TABLE `tb_building` (
+  `id` int(11) NOT NULL,
+  `ename` varchar(100) NOT NULL,
+  `adds` varchar(100) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `phone1` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `cat` varchar(100) NOT NULL,
+  `area` varchar(100) NOT NULL,
+  `size` varchar(100) NOT NULL,
+  `status` varchar(100) NOT NULL,
+  `uname` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_building`
+-- 
+
+INSERT INTO `tb_building` (`id`, `ename`, `adds`, `city`, `phone`, `phone1`, `email`, `cat`, `area`, `size`, `status`, `uname`) VALUES 
+(1, 'Revathy', 'srirangam', 'Chennai', 'dgfdsfgd', '546546', '', 'Individual villa ', 'Saravanampatti', '7000 sqft', 'Process', 'reva'),
+(2, 'dsfsdfg', 'sdgfdfgd', 'Chennai', 'e546457', '54756765', 'dfgdfg', 'Individual villa ', '80 Feet Road', '7000 sqft', 'Process', 'reva'),
+(3, 'vinoth', 'Arun Nagar', 'Chennai', '9856235689', '9856235689', 'vino@gmail.com', 'Individual villa ', 'Lalgudi', '7000 sqft', 'Process', 'vinoth');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_reg`
+-- 
+
+CREATE TABLE `tb_reg` (
+  `ename` varchar(100) NOT NULL,
+  `adds` varchar(100) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `uname` varchar(100) NOT NULL,
+  `pass` varchar(100) NOT NULL,
+  `utype` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_reg`
+-- 
+
+INSERT INTO `tb_reg` (`ename`, `adds`, `city`, `phone`, `uname`, `pass`, `utype`) VALUES 
+('', '', 'Trichy', '8987989898', 'reva', '123', 'Buliders'),
+('', '', 'Trichy', '8987989898', 'reva', '123', 'Buliders'),
+('Revathy', 'Trichy', 'Trichy', '8987989898', 'reva', '123', 'Buliders'),
+('ragu', 'Trichy', 'Trichy', '8987989898', 'ragu', '123', 'Transport'),
+('vinoth', 'Arun Nagar', 'Trichy', '9856235689', 'vinoth', '123', 'Buliders'),
+('karthick', 'Anna Nagar', 'Trichy', '98562356859', 'kathick', '123', 'Transport');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_trans`
+-- 
+
+CREATE TABLE `tb_trans` (
+  `id` int(11) NOT NULL,
+  `ename` varchar(100) NOT NULL,
+  `adds` varchar(100) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `phone1` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `fcity` varchar(1000) NOT NULL,
+  `tcity` varchar(100) NOT NULL,
+  `pick` varchar(100) NOT NULL,
+  `deli` varchar(100) NOT NULL,
+  `cata` varchar(100) NOT NULL,
+  `tru` varchar(100) NOT NULL,
+  `moq` varchar(100) NOT NULL,
+  `nos` varchar(100) NOT NULL,
+  `lw` varchar(100) NOT NULL,
+  `low` varchar(100) NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `uname` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_trans`
+-- 
+
+INSERT INTO `tb_trans` (`id`, `ename`, `adds`, `city`, `phone`, `phone1`, `email`, `fcity`, `tcity`, `pick`, `deli`, `cata`, `tru`, `moq`, `nos`, `lw`, `low`, `status`, `uname`) VALUES 
+(1, 'rty', 'rytrt', 'Chennai', '6575675', '6756756', 'fghgfd', 'Virudhunagar', 'Nagapattinam', '2022-03-30', '2022-02-28', 'Home Appliances', 'truck', '-7', '7878', 'Kgs', '10', 'Process', 'ragu'),
+(1, 'rty', 'rytrt', 'Chennai', '6575675', '6756756', 'fghgfd', 'Virudhunagar', 'Nagapattinam', '2022-03-30', '2022-02-28', 'Home Appliances', 'truck', '-7', '7878', 'Kgs', '10', 'Process', ''),
+(1, 'rty', 'rytrt', 'Chennai', '6575675', '6756756', 'fghgfd', 'Virudhunagar', 'Nagapattinam', '2022-03-30', '2022-02-28', 'Home Appliances', 'truck', '-7', '7878', 'Kgs', '10', 'Process', ''),
+(1, 'rty', 'rytrt', 'Chennai', '6575675', '6756756', 'fghgfd', 'Virudhunagar', 'Nagapattinam', '2022-03-30', '2022-02-28', 'Home Appliances', 'truck', '-7', '7878', 'Kgs', '10', 'Process', ''),
+(2, 'kathick', 'asdasd', 'Chennai', '67657567', '56756756', 'reva@gmail.com', 'Chennai', 'Virudhunagar', '2022-03-02', '2022-02-23', 'Cars', 'Select Category', '4', '-3', 'Kgs', '3', 'Process', 'kathick');
